@@ -1,0 +1,35 @@
+{% extends "mysite/base.html" %}
+
+{% load static %}
+
+    {% block body %}
+
+
+     <section class="section-hero overlay inner-page bg-image" style="background-image: url({% static 'mysite/images/6.png' %});" id="home-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-7">
+            <h1 class="text-white font-weight-bold">Error</h1>
+            <div class="custom-breadcrumbs">
+              <a href="index.html">Home</a> <span class="mx-2 slash">/</span>
+              <span class="text-white"><strong>Log In</strong></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+     <div class="global-container">
+        <div class="card login-form">
+        <div class="card-body">
+            <h3 class="card-title text-center">Error </h3>
+
+            <div class="text-center">
+            <a class="btn btn-primary" href="index.html" >Back</a>
+</div>
+        </div>
+    </div>
+    </div>
+
+
+    {% endblock body %}
